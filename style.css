@@ -312,3 +312,32 @@ footer {
         scroll-behavior: auto !important;
     }
 }
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+.btn-outline {
+    background: transparent;
+    color: #38bdf8;
+    border: 1px solid #38bdf8;
+}
+
+.btn-outline:hover {
+    background: #38bdf8;
+    color: #0b1120;
+}
+
+.hero-content > p:not(.welcome) {
+    max-width: 620px;
+}
+
+@media (max-width: 480px) {
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
