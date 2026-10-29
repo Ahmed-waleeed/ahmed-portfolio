@@ -1,49 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Waleed - Table</title>
 
-    <title>HTML Table</title>
-
-    <!-- Favicon -->
     <link rel="icon" href="https://www.google.com/favicon.ico">
+
+    <style>
+        table {
+            width: 420px;
+            border: 2px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        td, th {
+            border: 1px solid #999;
+            padding: 12px;
+        }
+
+        .green {
+            background-color: green;
+            font-weight: bold;
+        }
+
+        .address {
+            height: 55px;
+        }
+
+        .red {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Student Information</h1>
-
-    <!-- Student Table -->
-    <table border="1">
+    <table>
         <tr>
-            <th>Student ID</th>
-            <th>Name</th>
-            <th>Age</th>
+            <th colspan="2">Name</th>
+            <th rowspan="2" class="address">Address</th>
         </tr>
 
         <tr>
-            <td>1</td>
             <td>Ahmed</td>
-            <td>20</td>
+            <td>Waleed</td>
         </tr>
 
         <tr>
-            <td>2</td>
-            <td>Mohamed</td>
-            <td>21</td>
+            <td colspan="3" class="green">
+                All the data is here
+            </td>
         </tr>
 
         <tr>
-            <td>3</td>
-            <td>Ali</td>
-            <td>19</td>
+            <td colspan="2" rowspan="2">Ahmed Waleed</td>
+            <td class="red">Port Said</td>
+        </tr>
+
+        <tr>
+            <td>
+                Egypt
+            </td>
         </tr>
     </table>
 
-    <hr>
+    <br><br>
 
-    <!-- Clickable Image -->
     <h2>Click the Image to Visit Google</h2>
 
     <a href="https://www.google.com" target="_blank">
